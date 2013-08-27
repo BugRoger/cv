@@ -1,0 +1,227 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{helvet}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Michael}{Schmidt}
+\title{Senior Software Engineer}                               % optional, remove / comment the line if not wanted
+\address{Dunckerstrasse 26a}{10437 Berlin}{Germany}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+49 171 2667328}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{michael.j.schmidt@gmail.com}                               % optional, remove / comment the line if not wanted
+\social[twitter]{BugRoger}                             % optional, remove / comment the line if not wanted
+\social[github]{BugRoger}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Work Experience}
+\cventry{2006--Present}{Expert Development Consultant}{SAP AG}{Berlin}{}{
+Introduction of Devops, Opscode Chef as configuration management software.
+Introduction of Ruby and Ruby on Rails.
+Architected and developed internal projects based on Ruby, Rails, Chef, Sinatra, Java, GWT, Alfresco.
+Coaching and 
+Coordinated team assigments to projects, interviewed and hired new team members.
+}
+\cventry{2003--2006}{Consultant}{SAP SI}{Dresden}{}{
+Consultant for custom development on SAP Enterprise Portal.
+On-site customization for various customers.
+Coaching and training for SAP WebDynpo, SAP Enterprise Portal, SAP Knowledge Management, SAP NWDI.
+}
+\cventry{2003}{Freelancer}{SAP Deutschland AG}{Berlin}{}{
+Worked on a internet platform for a large utilities provider.
+Implemented a modern frontend in Java, JSP, HTML and CSS.
+}
+\cventry{2002--2003}{Working Student}{eSAP}{Berlin}{}{
+Master thesis about Modelling Attack-Vectors in modern Web-Applications.
+Validated approach by applying findings for the SAP Enterprise Portal.
+}
+\cventry{1999--2002}{Research Assistant}{Distributed Artificial Intelligence Laboratory}{Berlin, Germany}{}{
+Worked for Professor Sahin Albayrak on a service-oriented distributed agent platform. 
+Wrote a complex graphical user interface in Java for managing onthologies used in inter-agent communication. 
+}
+\cventry{1992--2003}{Freelancer}{crashedpixels.de}{Crailsheim}{}{
+Created a full featured inventory management application for a local goldsmith business. 
+Used Delphi and SQL to write custom reports, bills and labels.
+Supported and migrated the application from Windows 3.11 to Windows XP.
+}
+\cventry{1992--2003}{Webmaster}{crashedpixels.de}{Crailsheim}{}{
+Build and maintained various dynamic websites for local businesses.
+Customer specific modifications in Perl using the MovableType CMS.
+Various dynamic implementations using PHP on a LAMP stack.
+}
+\cventry{1992-1996}{Customer Service}{HEM Expert}{Satteldorf}{}{
+Configured and assembled large numbers of PCs and servers as specified by OEM customers.
+Worked in customer support on troubleshooting and fixing end-user hardware and software problems.
+}
+
+\section{Projects}
+\cventry{Present}{Inhouse Cloud Platform}{SAP}{}{}{
+} 
+\cventry{2012}{Expert-Finding Social Network}{SAP}{}{}{
+Lead architect and developer for a social netwwork for finding experts.
+Integration with various inhouse and external profile management applications.
+Continuous delivery with an automated deployment pipeline based on Bamboo.
+Used technologies: Ruby on Rails, Solr, Chef, Red Hat Enterprise Linux
+}
+\cventry{2011}{Employee Motivation Campaign}{SAP}{}{}{
+Test-Driven development of an application for uploading and customization of images and videos. 
+Integration with internal community platforms.
+Ruby on Rails, Resque, Imagemagick, Picky, Chef, Red Hat Enterprise Linux. 
+}
+\cventry{2010}{Ecosystem App-Store}{SAP}{}{}{
+Architected, implemented and deployed an app-store for promoting and selling SAP solutions created by partners. 
+Frontend in Sinatra and JRuby running in OSGI and SAP Lean Java Server.
+Custom content management system in Sinatra and Markdown.
+Object-Document Mapper in Java for MongoDB and GWT.
+Multifaceted Search Frontend based on GWT. 
+}
+\cventry{2009--2010}{Document Management System}{SAP}{}{}{
+Worked on a company wide introduction of Alfresco as document management system.
+Implemented various custom workflows for internal customers.
+Adapted an existing content-management solution to the Alfresco backend.
+Built various tools and applications based on Alfresco, Java and GWT.
+}
+\cventry{2006--2009}{Business Center for SAP ByDesign}{SAP}{}{}{
+Built a internet platform that facilitates the launch and ongoing support for SAP ByDesign.
+Architected and implemented a custom content management system on SAP Enterprise Portal.
+Redesigned a rendering engine that is suitable for large traffic scenarios.
+Coached and trained support and content-editors.
+}
+\cventry{2005--2006}{Incident Management System}{Deutsche Post}{}{}{
+Architected and implemented a customer facing incident management system for Deutsche Post AG.
+Custom solution based on SAP Enterprise Portal, WebDynpro for Java and customization in ABAP.
+Setup build and deployment infastructure based on SAP NWDI.
+Coached and trained customer's internal IT staff. 
+}
+\cventry{2004--2005}{Management Self-Services for Automotive}{Volkswagen}{}{}{
+Implemented Management-Self Services for an Intranet Platform.
+Rapid-Development of web interfaces in WebDynpro that integrate with a heavily customized SAP ERP system. 
+Sales support for SAP Enterprise Portal.
+}
+\cventry{2003--2004}{Productization of Business Packages}{SAP Consulting}{}{}{
+Worked on productizing a custom built CMS into Business Packages for SAP Enterprise Portal.
+Created a content management solutions for SAP Enterprise Portal (Web Editing) and webpages (Web Publishing).
+Created documentation in \LaTeX{} and Docbook that can be converted to HTML, PDF and SAP Knowledge Warehouse.
+Developed a web service for converting Microsoft Word documents into HTML.
+}
+\cventry{2003}{Internet Platform for Utilities Provider}{Gasag}{}{}{
+Relaunch of the Gasag website (\url{https://www.gasag.de/}). 
+Custom build CMS based on java and iViews in SAP Knowledge Managemenent and Enterprise Portal.
+Created a content-management workflow based on Microsoft Word.
+}
+
+\section{Education}
+\cventry{1999--2003}{Diplom Informatiker, Computer Science}{Technische Universität}{Berlin}{}{
+Diplom in Computer Science with minor in work psychology. Coursework included computer graphics, artificial intelligence, computer security and statistical evaluation, psychology nad interpretation of surveys and questionaires.
+}
+\cventry{1996--1999}{Undergraduate Degree, Computer Science}{Insitute of Technology}{Karlsruhe}{}{
+Minored in advanced mathematics. Coursework included in-depth mathematics, complexity theory, practical work with different types of programming languages.
+}
+\cventry{1988--1996}{Abitur}{Albert-Schweitzer Gymnasium}{Crailsheim}{}{}
+
+\section{Languages}
+\cvitemwithcomment{German}{Native}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{French}{Conversant}{}
+
+\section{Computer skills}
+\subsection{Extremely Proficient With}
+\cvline{Languages}{Ruby, Javascript, Coffeescript, Java, Perl, PHP, Delphi, Pascal, HTML5, CSS3, HAML, SASS, JSON}
+\cvline{Frameworks}{Rails, Sinatra, Rack, Chef, Spring, GWT, OSGi, jQuery, Bootstrap, SAP Enterprise Portal}
+\cvline{Databases}{MySQL, PostgreSQL, SQLite, MongoDB, Redis}
+\cvline{Editors}{Vim, Eclipse}
+\cvline{Tools}{nginx, Passenger, SAP Netweaver, SAP Lean Java Server, Adobe Photoshop, \LaTeX{}, Shell}
+\cvline{OS}{MacOS, Windows, Ubuntu, Debian, Red Hat Enterprise Linux}
+\subsection{Have Experience With}
+\cvline{Languages}{Objective C, C, C++, Prolog, Lua, Erlang, Groovy}
+\cvline{Databases}{CouchDb, Berkley DB}
+\cvline{Editors}{Visual Studio, Emacs}
+\cvline{Tools}{Apache, Berkley DB, Wordpress CMS, MovableType CMS, Flash}
+\cvline{OS}{Suse, Fedora Linux, Raspbian}
+
+\section{Interests}
+\cvitem{Sports}{Beach-Volleyball, Biking}
+\cvitem{Games}{Boardgames, eSports}
+\cvitem{Controllers}{Ardunio, RaspberryPi}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

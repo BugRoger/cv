@@ -1,0 +1,135 @@
+    1  uname -a
+    2  yum upgrade
+    3  yum clean all
+    4  rm -rf ~/.bash_history 
+    5  shutdown -h now
+    6  which tex
+    7  which texhash
+    8  ls -all /bin/tex
+    9  cat /bin/tex
+   10  ll
+   11  cd /bin
+   12  ls -al
+   13  cd /usr/share/texlive/
+   14  ll
+   15  cd texmf
+   16  ll
+   17  cd ..
+   18  ll
+   19  cd tlpkg/
+   20  ll
+   21  cd TeXLive/
+   22  ll
+   23  cd ..
+   24  ll
+   25  cd ..
+   26  ll
+   27  cd texmf-local/
+   28  ll
+   29  cd ..
+   30  cd ll
+   31  ll
+   32  cd texmf-dist/
+   33  ll
+   34  cd ..
+   35  ll
+   36  cd ..
+   37  ll
+   38  cd /usr/sbin/
+   39  cd ..
+   40  ll
+   41  cd share/
+   42  ll
+   43  cd texlive/
+   44  ll
+   45  cd ..
+   46  ll
+   47  cd ..
+   48  ll
+   49  cd bin/
+   50  ll
+   51  which tlmgr
+   52  find . -name tlmgr
+   53  cd ..
+   54  find . -name tlmgr
+   55  yum search tex
+   56  yum search tex | grep modern
+   57  yum info texlive-moderncv.noarch
+   58  tload 
+   59  ll
+   60  wget https://launchpad.net/moderncv/trunk/1.5.1/+download/moderncv-1.5.1.zip
+   61  ll
+   62  mv moderncv-1.5.1.zip ~
+   63  cd ~
+   64  ll
+   65  unzip moderncv-1.5.1.zip 
+   66  gunzip moderncv-1.5.1.zip 
+   67  gunzip moderncv-1.5.1
+   68  yum install unzip
+   69  unzip moderncv-1.5.1.zip 
+   70  ll
+   71  yum install ftp://rpmfind.net/linux/fedora/linux/updates/testing/18/x86_64/texlive-moderncv-svn30189.1.5.1-0.1.fc18.noarch.rpm
+   72  wget https://raw.github.com/mliu7/latex-moderncv/master/mark_liu_resume.tex
+   73  ll
+   74  pdflatex mark_liu_resume.tex 
+   75  ll
+   76  cp mark_liu_resume.pdf /vagrant/
+   77  pdflatex mark_liu_resume.tex 
+   78  cp mark_liu_resume.pdf /vagrant/
+   79  ll
+   80  mkdir .texmf
+   81  mv moderncv .texmf/
+   82  ll
+   83  pdflatex mark_liu_resume.tex 
+   84  texhash 
+   85  pdflatex mark_liu_resume.tex 
+   86  yum search moderncv
+   87  yum info texlive-moderncv
+   88  ll
+   89  rm -rf .texmf/
+   90  ll
+   91  unzip moderncv-1.5.1.zip 
+   92  cd moderncv
+   93  ll
+   94  cd examples/
+   95  ll
+   96  pdflatex template.tex 
+   97  ll
+   98  cp template.pdf /vagrant/
+   99  bibtex 
+  100  bibtex publications.bib 
+  101  bibtex template
+  102  ll
+  103* 
+  104  cp template.pdf /vagrant/
+  105  history
+  106  yum search texlive-moderncv --enablerepo=updates-testing
+  107  yum info texlive-moderncv --enablerepo=updates-testing
+  108  yum purge texlive-moderncv
+  109  yum remobe texlive-moderncv
+  110  yum remove texlive-moderncv
+  111  yum info texlive-moderncv --enablerepo=updates-testing
+  112  exit
+  113  history
+  114  yum install texlive-moderncv --enablerepo=updates-testing
+  115  exit
+  116  ll
+  117  cd /tmp/
+  118  ll
+  119  rm m*.*
+  120  j
+  121  ll
+  122  date
+  123  cd ..
+  124  ll
+  125  cat michael_schmidt.log 
+  126  yum search textlive | grep helv
+  127  yum search texlive | grep helv
+  128  yum install texlive-helvetica
+  129  yum install texlive-helvetic
+  130  cd /tmp/
+  131  ll
+  132  cat michael_schmidt.log 
+  133  yum search textlive | grep helvc
+  134  history
+  135  history > /vagrant/history.txt
