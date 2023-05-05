@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{helvet}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -25,14 +25,14 @@
 
 % personal data
 \name{Michael}{Schmidt}
-\title{Senior Software Engineer}                               % optional, remove / comment the line if not wanted
-\address{Dunckerstrasse 26a}{10437 Berlin}{Germany}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\title{Development Manager}                               % optional, remove / comment the line if not wanted
+\address{Landsberger Allee 48a}{10249 Berlin}{Germany}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{+49 171 2667328}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{michael.j.schmidt@gmail.com}                               % optional, remove / comment the line if not wanted
 \social[twitter]{BugRoger}                             % optional, remove / comment the line if not wanted
 \social[github]{BugRoger}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.2pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -52,12 +52,21 @@
 \makecvtitle
 
 \section{Work Experience}
-\cventry{2013--Present}{Senior Software Engineer}{SAP SE}{Berlin}{}{
+\cventry{2019--Present}{Development Manager}{SAP SE}{Berlin}{}{
+Manage a team of 20 engineers, responsible for the design and developnent of extended services for SAP Converged Cloud. Strong background in leading cross-functional teams to deliver complex software projects using agile practices. \newline{}
+\begin{itemize}
+    \item Manage large fleets of productive Kubernetes clusters with state-of-the-art operations concept 
+    \item Instrumental in adapting processes and tools to achieve PCI-DSS compliance
+    \item Development of uplift features for a large scale lift-and-shift migration in close collaboration with lines of businesses
+    \item Mentor and coach team members to help them achieve their full potential and advance their careers
+\end{itemize}
+}
+
+\cventry{2013--2019}{Senior Software Engineer}{SAP SE}{Berlin}{}{
 Team lead, architect and lead developer for internal projects based on Kubernetes. Lead a team that builds and operates a Kubernetes based foundation for SAP's inhouse cloud. Responsible for product management, development and operations of a managed Kubernetes platform. Managed multiple projects based on Scrum/Kanban. \newline{}
 \begin{itemize}
 \item Championed container technologies. Introduced Kubernetes as basis for SAP's inhouse Cloud. Transistioned a large dev-ops team to cloud-native technologies. 
 \item Built a managed service for provisioning of Kubernetes clusters 
-\item Managed large fleets (300+) of Kubernetes clusters
 \item Coached and nurtured a Helm based distribution of OpenStack
 \end{itemize}
 }
@@ -161,8 +170,6 @@ Sales support for SAP Enterprise Portal.
 }
 \cventry{2003--2004}{Productization of Business Packages}{SAP Consulting}{}{}{
 Created a content management solutions for SAP Enterprise Portal (Web Editing) and webpages (Web Publishing).
-It provides customers with an easy way to create content in KM an automatically translate into iViews and layouts, a feature which was not available in the standard product at the time.
-Worked on productizing these extensions for SAP Enterprise Portal.
 Created documentation in \LaTeX{} and Docbook that can be converted to HTML, PDF and SAP Knowledge Warehouse.
 Developed a web service for converting Microsoft Word documents into HTML.
 }
@@ -183,27 +190,26 @@ Minored in advanced mathematics. Coursework included in-depth mathematics, compl
 
 \section{Languages}
 \cvitemwithcomment{German}{Native}{}
-\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{English}{Full professional}{}
 \cvitemwithcomment{French}{Conversant}{}
 
 \section{Computer skills}
 \subsection{Extremely Proficient With}
 \cvline{Languages}{Golang, Ruby, Javascript, Coffeescript, Java, Perl, PHP, Delphi, Pascal, HTML5, CSS3, HAML, SASS, JSON}
-\cvline{Frameworks}{Kubernetes, client-go, Rails, Sinatra, Rack, Chef, Spring, GWT, OSGi, jQuery, Bootstrap, SAP Enterprise Portal}
-\cvline{Databases}{Etcd, MySQL, PostgreSQL, SQLite, MongoDB, Redis}
-\cvline{Editors}{VSCode, Vim, Eclipse}
+\cvline{Frameworks}{Kubernetes, client-go, kube-builder, Rails, Sinatra, Rack, Chef, Spring, GWT, OSGi, jQuery, Bootstrap, SAP Enterprise Portal}
+\cvline{Databases}{Etcd, PostgreSQL, Redis, MySQL, SQLite, MongoDB}
+\cvline{Editors}{VSCode, Vim, Autodesk Fusion 360, Eclipse}
 \cvline{Tools}{Git, Docker, Concourse, TravisCI, nginx, Passenger, SAP Netweaver, SAP Lean Java Server, Adobe Photoshop, \LaTeX{}, Shell}
-\cvline{OS}{MacOS, CoreOS, Windows, Ubuntu, Debian, Red Hat Enterprise Linux}
+\cvline{OS}{MacOS, FlatCar Linux, Alpine Linux, Windows, Ubuntu, Debian, HypriotOS, Red Hat Enterprise Linux}
 \subsection{Have Experience With}
-\cvline{Languages}{Objective C, C, C++, Prolog, Lua, Erlang, Groovy}
+\cvline{Languages}{Swift, Objective C, C, C++, Prolog, Lua, Erlang, Groovy}
 \cvline{Databases}{CouchDb, Berkley DB}
 \cvline{Tools}{Apache Webserver, Berkley DB, Wordpress CMS, MovableType CMS, Flash}
-\cvline{OS}{Suse, Fedora Linux, Raspbian}
+\cvline{OS}{ArchLinux, Suse, Fedora Linux, Raspbian}
 
 \section{Interests}
 \cvitem{Sports}{Crossfit, Beach-Volleyball, Biking}
-\cvitem{Games}{Boardgames, eSports}
-\cvitem{Controllers}{Ardunio, RaspberryPi}
+\cvitem{Hobbies}{Boardgames, speciality coffee, 3D printing and modelling, woodworking, home automation}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
